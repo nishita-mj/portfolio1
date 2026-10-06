@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nishita Manjrawala | Full Stack Developer & Creative Digital Professional</title>
+<meta name="description" content="Portfolio of Nishita Manjrawala, a MERN full stack developer, social media marketer and graphic designer based in Surat, India.">
+<meta property="og:title" content="Nishita Manjrawala | Full Stack Developer & Creative">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0c10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#home" aria-label="Nishita home">nishita<span>.</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><i></i><i></i></button>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#creative">Creative</a><a href="#journey">Journey</a>
+    <a class="pill" href="#contact">Let's talk</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="chip"><span class="dot"></span> Open to internships & freelance work</p>
+    <h1>Hi, I'm Nishita 👋<br><em>Full Stack Developer & Creative Digital Professional</em></h1>
+    <p class="lead">I build MERN-stack web apps and run social content that actually gets seen. Code, design and storytelling, handled by one person who cares about the details.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View My Work</a>
+      <a class="btn ghost" href="#contact">Let's Connect</a>
+      <a class="btn ghost" href="./Manjrawala Nishita (2).pdf" download="Manjrawala Nishita (2).pdf">Download Resume</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="frame glass">
+      <!-- Replace with: <img src="assets/nishita.jpg" alt="Nishita Manjrawala"> -->
+      <div class="avatar" role="img" aria-label="Profile photo placeholder"><span>NM</span></div>
+    </div>
+    <span class="float f1">React</span><span class="float f2">JavaScript</span>
+    <span class="float f3">Node.js</span><span class="float f4">MongoDB</span>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <h2 class="reveal">One person, two crafts</h2>
+  <p class="sub reveal">I'm a BCA student who writes code by day-to-night and plans content in between. The two sides make each other better.</p>
+  <div class="about-grid" id="aboutGrid"></div>
+</section>
+
+<section id="skills" class="sec">
+  <h2 class="reveal">Skills</h2>
+  <p class="sub reveal">Hover a card to see how I use each tool.</p>
+  <div class="skills" id="skillGrid"></div>
+</section>
+
+<section id="projects" class="sec">
+  <h2 class="reveal">Selected projects</h2>
+  <p class="sub reveal">Built while learning the MERN stack, each one taught me something different.</p>
+  <div class="projects" id="projectGrid"></div>
+</section>
+
+<section id="creative" class="sec">
+  <h2 class="reveal">Beyond code</h2>
+  <p class="sub reveal">Content, design and growth work for brands, including my day job in social media.</p>
+  <div class="services" id="serviceGrid"></div>
+  <h3 class="reveal">Gallery</h3>
+  <div class="masonry" id="masonry"></div>
+
+  <h3 class="reveal">Creative showcase</h3>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div class="tabpanel" id="tabPanel" role="tabpanel" aria-live="polite"></div>
+</section>
+
+<section id="journey" class="sec">
+  <h2 class="reveal">My journey</h2>
+  <ol class="timeline" id="timeline"></ol>
+</section>
+
+<section id="contact" class="sec contact">
+  <div class="contact-card glass reveal">
+    <h2>Have an idea? Let's build it together. 🚀</h2>
+    <form id="form" novalidate>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Project type
+        <select name="type"><option>Website / Web app</option><option>Social media management</option><option>Graphic design</option><option>UI/UX design</option><option>Something else</option></select>
+      </label>
+      <label class="full">Message<textarea name="message" rows="4" required></textarea></label>
+      <button class="btn primary full" type="submit">Send Message</button>
+      <p class="status full" id="status" role="status"></p>
+    </form>
+    <div class="socials" id="socials"></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><p>© <span id="year"></span> Nishita Manjrawala. Designed and built by hand in Surat.</p></footer>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
