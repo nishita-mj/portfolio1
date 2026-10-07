@@ -63,7 +63,7 @@ window.SITE = {
   ],
 
   showcase: {
-    "Web Design":   [{ label: "Landing page", image: "" }, { label: "Dashboard UI", image: "" }, { label: "Mobile screens", image: "" }],
+    "Web Design":   [{ label: "Landing page", image: "./landing page.png" }, { label: "Dashboard UI", image: "./googleContact.png" }, { label: "Mobile screens", image: "./mobile screen.png" }],
     "Graphics":     [{ label: "Poster", image: "" }, { label: "Brand kit", image: "" }, { label: "Social banner", image: "" }],
     "Social Media": [{ label: "Reel", image: "" }, { label: "Carousel", image: "" }, { label: "Story set", image: "" }]
   },
